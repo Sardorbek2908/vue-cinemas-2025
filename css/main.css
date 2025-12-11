@@ -80,6 +80,12 @@ a {
     text-transform: capitalize;
     border-bottom: 2px solid var(--primary-orange);
     width: max-content;
+    margin-bottom: 50px;
+}
+
+
+body {
+    background-color: var(--dark-blue);
 }
 
 /* Site ADS */
@@ -228,9 +234,101 @@ a {
     color: #C8C8C8;
 }
 
-.site-hero__button{
+.site-hero__button {
     display: flex;
     column-gap: 30px;
 }
 
 /* Site hero */
+/* Site Main */
+.films {
+    padding-top: 44px;
+    padding-bottom: 77px;
+}
+
+.films-cards {
+    display: flex;
+}
+
+.films-card {
+    position: relative;
+    max-width: 255px;
+    width: 100%;
+    height: 367px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.films-card__image {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.films-card__content {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(241, 129, 40, 0.35) 0%, rgba(0, 0, 0, 0.71) 51.04%, rgba(7, 15, 25, 0.8) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+.films-card__link {
+    color: var(--secondary-white);
+    transition: .3s;
+}
+
+.films-card__time {
+    width: 100px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border: 1px solid var(--secondary-white);
+    border-radius: 9px;
+    text-align: center;
+    color: var(--secondary-white);
+    font-family: var(--Montserrat);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 10px;
+    background: #070F1933;
+    margin-top: 12px;
+    margin-bottom: 30px;
+    transition: .3s;
+}
+
+.films-card__title {
+    font-family: var(--Montserrat);
+    font-weight: 400;
+    font-size: 22px;
+    text-align: center;
+    vertical-align: middle;
+    color: var(--secondary-white);
+}
+
+.films-card__text {
+    font-family: var(--Roboto);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--secondary-white);
+    margin-top: 12px;
+}
+
+.films-card__content:hover {
+    cursor: pointer;
+}
+
+.films-card__content:hover .films-card__link {
+    transform: scale(1.4);
+}
+
+.films-card__content:hover .films-card__time {
+    transform: scale(0);
+}
