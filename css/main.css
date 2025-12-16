@@ -521,7 +521,7 @@ body {
 
 
 .site-footer {
-    background: var(--primary-orange);
+    background: linear-gradient(90deg, #FF8C30 0%, #9F4700 100%);
     padding-top: 24px;
     padding-bottom: 24px;
 
