@@ -576,9 +576,11 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 .series-sm__link {
     color: var(--secondary-white);
 }
+
 .series-sm__title {
     font-family: var(--Comfortaa);
     font-weight: 700;
@@ -590,6 +592,7 @@ body {
 .series-item {
     min-height: 190px;
 }
+
 .series-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -599,4 +602,33 @@ body {
 }
 
 
+
 /* Series */
+
+/* FOOTER */
+
+.site-footer {
+    width: 100%;
+    background-color: var(--primary-orange);
+    padding-top: 26px;
+    padding-bottom: 26px;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-app {
+    display: flex;
+    column-gap: 50px;
+}
+
+.footer-text {
+    font-family: var(--Comfortaa);
+    font-weight: 700;
+    font-size: 18px;
+    text-align: right;
+    color: var(--secondary-white);
+}
